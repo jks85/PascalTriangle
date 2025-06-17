@@ -1,8 +1,8 @@
-# Functions that generate binomial coefficients
+# Two functions that generate binomial coefficients
+# efficiency is compared in Testing.py
+# results writeup in Analysis.md
 
 import time
-
-
 
 def get_binom_coeff(n:int, k:int) -> int:
     '''
@@ -90,7 +90,9 @@ def fast_binom_coeff(n:int, k:int, coeff_dict = {(0,0):1, (1,0):1, (1,1):1}) -> 
     coeff_dict[(n,k)] = row_n_coeff
     return row_n_coeff
 
-
+######
+# small tests below
+# see Testing.py and Analysis.md
 
 n = 50
 k = 25
